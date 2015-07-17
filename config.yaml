@@ -2,3 +2,5 @@
 baseurl: "http://hpcloud-mon.github.io/"
 languageCode: "en-us"
 title: "Monasca"
+params:
+  description: "An open source multi-tenant, highly scalable, performant, fault-tolerant monitoring as a service solution."
