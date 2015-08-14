@@ -3,6 +3,7 @@ weight = 7
 date = "2015-08-07T18:32:00-06:00"
 draft = false
 title = "agent"
+categories = [ "Basics" ]
 +++
 
 Monasca supports an optional monitoring agent that is written in Python. <!--more--> The agent supports the following checks and metrics:

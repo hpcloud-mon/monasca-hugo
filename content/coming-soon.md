@@ -3,6 +3,7 @@ weight = 8
 date = "2015-08-07T18:32:00-06:00"
 draft = false
 title = "coming soon"
+categories = [ "Basics" ]
 +++
 
 Stop, that's enough. You're killing me. Monasca will be adding support for the following: <!--more-->

@@ -3,6 +3,7 @@ weight = 3
 date = "2015-08-07T18:32:00-06:00"
 draft = false
 title = "metrics"
+categories = [ "Basics" ]
 +++
 
 Provides an API for real-time storage and retrieval of metrics and statistics. <!--more--> The main features of metrics are as follows:
