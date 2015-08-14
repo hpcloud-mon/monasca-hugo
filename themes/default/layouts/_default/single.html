@@ -8,21 +8,7 @@
       <div class="col s12">
         <div class="card-panel">
           <h4>{{ .Title }}</h4>
-          <p>
-          {{if .Params.categories }}
-            {{ range $index, $category := .Params.categories }}
-              <a href="{{$baseurl}}/categories/{{ $category | urlize }}/">{{ $category }}</a>
-            {{ end }}
-          {{end}} 
-          </p>
           <p>{{ .Content }}</p>
-          <p>
-            {{if .Params.tags }}
-              {{ range $index, $tag := .Params.tags }}
-                <a href="{{$baseurl}}/tags/{{ $tag | urlize }}/">#{{ $tag }}</a>
-              {{ end }}
-            {{end}}
-          </p>
           {{ with .Site.DisqusShortname }}
             {{ partial "disqus.html" . }}
           {{ end }}
