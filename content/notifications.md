@@ -9,6 +9,6 @@ Notifications can be sent when alarm state transition occurs. <!--more--> Monasc
 
 Support the following type of notification methods:
 
-  1. Email
-  2. PagerDuty
-  3. Webhooks
+- Email
+- PagerDuty
+- Webhooks

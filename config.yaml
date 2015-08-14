@@ -5,4 +5,4 @@ title: "Monasca"
 theme: "default"
 copyright: "© 2015 Hewlett-Packard"
 params:
-  description: "An open source multi-tenant, highly scalable, performant, fault-tolerant monitoring as a service solution."
+  description: "Monitoring-as-a-Service (at-Scale)"
