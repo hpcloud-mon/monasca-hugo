@@ -1,6 +1,8 @@
 ---
-baseurl: "http://hpcloud-mon.github.io/"
+baseurl: "http://monasca.io/"
 languageCode: "en-us"
 title: "Monasca"
+theme: "default"
+copyright: "© 2015 Hewlett-Packard"
 params:
   description: "An open source multi-tenant, highly scalable, performant, fault-tolerant monitoring as a service solution."
