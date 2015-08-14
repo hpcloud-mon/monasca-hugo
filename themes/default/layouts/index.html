@@ -2,7 +2,27 @@
 
 <div class="container">
   <div class="section">
-    {{ partial "content.html" . }}
+    {{ $baseurl := .Site.BaseURL }}
+    <div class="row">
+    {{ $paginator := .Paginate (where .Data.Pages "Section" "root") }}
+    {{range $index, $page := $paginator.Pages}}
+      {{ if and (modBool $index 3) (ne 0 $index) }}
+    </div>
+    <div class="row">
+      {{ end }}
+      <div class="col m4 s12">
+        <div class="card-panel">
+          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+          <p> {{ .Summary }} </p>
+          {{ if .Truncated }}
+            <div class="read-more-link">
+              <a href="{{ .RelPermalink }}">Read More…</a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+    </div>
     {{ partial "pagination.html" .Paginator }}
   </div>
 </div>
