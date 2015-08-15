@@ -47,7 +47,7 @@ In addition, Monasca optionally supports the following:
 
 ##### Licensing
 
-All code has been developed under an Apache 2.0 license and has no restrictions on distribution or deployment.
+Monasca has been developed under an [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0) and has no restrictions on distribution or deployment.
 
 ##### Acknowledgments
 
