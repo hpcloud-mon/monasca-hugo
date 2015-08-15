@@ -12,7 +12,7 @@ Alarms can be created and notifications, such as email, can be sent when alarms 
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.
 
-##### Who is involved?
+##### who is involved?
 
 The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
 Monasca is in the process of applying for [OpenStack](http://www.openstack.org/) governance.
@@ -27,29 +27,30 @@ Some of the major companies involved with developing and/or deploying Monasca in
 - Cray
 - Rackspace
 
-##### Technologies
+##### technologies
 
 Monasca is written in both Java and Python. Several of the components in Monasca started out in Java. However, the go-forward language for Monasca is Python.
 
 Monasca is built on several open-source technologies including: <!--more-->
 
-- [StackTach.v3](http://stacktach.com/) Real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.
-- [Apache Kafka](http://kafka.apache.org/) A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.
-- [Apache Storm](https://storm.apache.org/) Apache Storm is a free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.
-- [Apache ZooKeeper](https://zookeeper.apache.org/) Apache ZooKeeper is is by Kafka and Storm.
-- [InfluxDB](https://influxdb.com/) An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history. 
-- [MySQL](https://www.mysql.com/) MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.
-- [Grafana](http://grafana.org) is an open source, feature rich metrics dashboard and graph editor. Support for Monasca as a data source in Grafana has been added.
+- [OpenStack](http://openstack.org): Monasca uses the [Keystone](http://docs.openstack.org/developer/keystone/) OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca is also in the process of integrating with several other OpenStack services such as [Heat](http://docs.openstack.org/developer/heat/) for auto-scaling and [Ceilometer](http://docs.openstack.org/developer/ceilometer/) for monitoring OpenStack resources. Integrations with additional services will be targeted in the future.
+- [StackTach.v3](http://stacktach.com/): A real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.
+- [Apache Kafka](http://kafka.apache.org/): A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.
+- [Apache Storm](https://storm.apache.org/): S free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.
+- [Apache ZooKeeper](https://zookeeper.apache.org/): Used by Kafka and Storm.
+- [InfluxDB](https://influxdb.com/): An open-source distributed time series database with no external dependencies. InfluxDB is one of the supported databases for storing metrics and alarm history. 
+- [MySQL](https://www.mysql.com/): S freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). SQL is the most popular language for adding, accessing and managing content in a database. It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is one of the supported databases for the Monasca Config Database.
+- [Grafana](http://grafana.org): An open source, feature rich metrics dashboard and graph editor. Support for Monasca as a data source in Grafana has been added.
 
 In addition, Monasca optionally supports the following:
 
 - [HP Vertica](http://www.vertica.com/) HP Vertica delivers the most advanced SQL analytics as a standards-based relational database with full support for SQL, JDBC, and ODBC. Vertica is one of the supported databases for storing metrics and alarm history within Monasca.
 
-##### Licensing
+##### licensing
 
 Monasca has been developed under an [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0) and has no restrictions on distribution or deployment.
 
-##### Acknowledgments
+##### acknowledgments
 
 Monasca uses the [YourKit Java Profiler](https://www.yourkit.com/) for Java development and performance analysis.
 
