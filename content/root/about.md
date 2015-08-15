@@ -6,7 +6,7 @@ title = "about"
 categories = [ "Basics" ]
 +++
 
-Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics.
+Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution for metrics. <!--more-->
 Metrics can be published to the Monasca API, stored and queried.
 Alarms can be created and notifications, such as email, can be sent when alarms transition state.
 Support for complex event processing and logging is in progress.
