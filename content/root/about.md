@@ -23,14 +23,20 @@ Companies involved with developing and/or deploying Monasca include the followin
 
 Monasca is written in both Java and Python. Several of the componenent in Monasca started out in Java. However, the go-forward language for Monasca is Python.
 
-Monasca is built on several open-source technololgies including: <!--more-->
+Monasca is built on several open-source technologies including: <!--more-->
 
-- Kafka
-- Apache Storm
-- ZooKeeper
-- InfluxDB
-- MySQL
+- [Apache Kafka](http://kafka.apache.org/)
+- [Apache Storm](https://storm.apache.org/)
+- [Apache ZooKeeper](https://zookeeper.apache.org/)
+- [InfluxDB](https://influxdb.com/)
+- [MySQL](https://www.mysql.com/)
 
 In addition, Monasca optionally supports the following:
 
-- Vertica
+- [Vertica](http://www.vertica.com/)
+
+##### Acknowledgments
+
+Monasca uses [YourKit](https://www.yourkit.com/) Profiler for Java development and performance analysis.
+
+[![Alt text](https://www.yourkit.com/images/yklogo.png "YourKit")](https://www.yourkit.com/)
