@@ -3,6 +3,6 @@ baseurl: "http://monasca.io/"
 languageCode: "en-us"
 title: "Monasca"
 theme: "default"
-copyright: "© 2015 Hewlett-Packard"
+copyright: "© 2015 Hewlett Packard Enterprise"
 params:
   description: "Monitoring-as-a-Service (at-Scale)"
