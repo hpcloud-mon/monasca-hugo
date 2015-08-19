@@ -1,7 +1,8 @@
 +++
-Categories = ['Debugging', 'Operations']
+Categories = ['Debugging']
 date = "2015-08-14T16:27:56-06:00"
 title = "Log and Configuration Locations"
+weight = 14
 +++
 
 **Monasca Components**

@@ -1,9 +1,9 @@
 +++
 weight = 1
-date = "2015-08-07T18:32:00-06:00"
+date = "2015-08-19T18:32:00-06:00"
 draft = false
 title = "about"
-categories = [ "Basics" ]
+categories = [ "overview" ]
 +++
 
 Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution. <!--more-->
