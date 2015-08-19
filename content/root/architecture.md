@@ -23,7 +23,7 @@ At this point the metrics are in our system and can be be retrieved from the Mon
 such as the Horizon plugin or the [Monasca CLI](/components/cli).
 
 When the threshold engine evaluates the metrics against the alarms it can create alarm state transition events. These are published back onto Kafka
-and are read by both the persister and [Notification Engine](/components/notification/). The persister simply writes the alarm transitions to the
+and are read by both the persister and [Notification Engine](/components/notifications/). The persister simply writes the alarm transitions to the
 DB for future retrieval. The notification engine will send a notification of the configured type for appropriate state transitions.
 
 In addition to the components discussed above we also have a configuration database used for storing information such as alarm definitions and
