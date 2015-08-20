@@ -17,7 +17,7 @@ horizontally to allow for monitoring of very large systems.
 The [Monasca API](/components/api/) is the gateway for all interaction with Monasca. In a typical scenario [metrics](/components/metrics)
 are collected by the [Monasca Agent](/components/agent/) running on a system and sent to the Monasca API. The api then puts the metrics onto the Kafak queue.
 From here the [Monasca Persister](/components/persister/) consumes metrics and writes them to our [Metrics database](/components/metrics_db/). The
-[Monasca Threshold Engine](/components/thresh/) also consumes the metrics and uses them to evaluate [alarms](/components/alarms/).
+[Monasca Threshold Engine](/components/alarms/) also consumes the metrics and uses them to evaluate [alarms](/components/alarms/).
 
 At this point the metrics are in our system and can be be retrieved from the Monasca API, either directly or through one of our other components
 such as the Horizon plugin or the [Monasca CLI](/components/cli).

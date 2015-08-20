@@ -6,4 +6,9 @@ weight = 10
 
 +++
 
-TBD
+The [Monasca persister](https://github.com/stackforge/monasca-persister) is responsible for reading metrics and alarm state transitions from
+[Kafka](https://kafka.apache.org/) and writing to the [metrics DB](/components/metrics_db/).<!--more--> Though this is a relatively simple task it must
+be done reliably at high speed with HA.
+
+Multiple persisters can run simultaneously utilizing different partitions within a Kafka topic to share the
+load between all instances. As instances drop off or come up the load is rebalanced between all available persisters.

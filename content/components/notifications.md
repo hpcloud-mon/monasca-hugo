@@ -6,9 +6,13 @@ title = "notifications"
 categories = [ "Components" ]
 +++
 
-Notifications can be sent when alarm state transition occurs. <!--more--> Monasca supports and integrated notification engine that allows notification methods to be created, such as email contacts, and associated with alarms. When alarm state transitions occur notifications can be sent to specified contacts and services.
+Notifications can be sent when alarm state transition occurs. <!--more--> Monasca supports an integrated
+[notification engine](https://github.com/stackforge/monasca-notification) that can send various notification types.
+[Alarm Definitions](https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms) can be associated
+with [notification methods](https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#notification-methods) for
+transitions to the states, OK, Alarm or Undetermined.
 
-Support the following type of notification methods:
+Notification methods of the following types are supported:
 
 - Email
 - PagerDuty
