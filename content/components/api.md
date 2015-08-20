@@ -6,7 +6,7 @@ title = "api"
 categories = [ "Components" ]
 +++
 
-The [Monasca API](https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md) is built on a first-class RESTful API that provides authentication and multi-tenancy. <!--more--> Monasca integrates with the OpenStack Keystone Identity service. 
+The [Monasca API](https://github.com/stackforge/monasca-api/) is built on a first-class RESTful API that provides authentication and multi-tenancy. <!--more--> Monasca integrates with the OpenStack Keystone Identity service. 
 
 Monasca supports the following main resources in the API:
 
@@ -19,3 +19,5 @@ Monasca supports the following main resources in the API:
 - GET, PUT, DELETE /v2.0/alarms: Operations for working with alarms.
 - GET /v2.0/alarms/state-history: List alarm state history for alarms.
 - GET, POST, PUT, DELETE /v2.0/notification-methods: Operations for working with notification methods.
+
+Refer to the [full API spec](https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md) for more info.
