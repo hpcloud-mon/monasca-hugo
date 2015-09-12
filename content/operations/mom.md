@@ -1,7 +1,8 @@
 +++
-Categories = ["Debugging", "Operations"]
+Categories = ["Operations"]
 date = "2015-08-14T16:42:17-06:00"
 title = "Monitoring of Monitoring"
+weight = 12
 
 +++
 

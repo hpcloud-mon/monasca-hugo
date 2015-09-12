@@ -1,12 +1,11 @@
 +++
-weight = 3
 date = "2015-08-07T18:32:00-06:00"
 draft = false
 title = "metrics"
-categories = [ "Basics" ]
+categories = [ "components" ]
 +++
 
-Provides an API for real-time storage and retrieval of metrics and statistics. <!--more--> The main features of metrics are as follows:
+Monasca provides an API for real-time storage and retrieval of metrics and statistics. <!--more--> The main features of metrics are as follows:
 
 - Storage and retrieval of metrics.
 - Push-based, streaming of metrics. Monasca support pushing metrics to the API, and does not support pull-based metrics.
@@ -47,3 +46,4 @@ A metric is a simple, concise, multi-dimensional and flexible description that c
     }
 ```
 
+The [Agent](/components/agent/) documentation has more information on [metrics.](https://github.com/stackforge/monasca-agent/blob/master/docs/MonascaMetrics.md)
