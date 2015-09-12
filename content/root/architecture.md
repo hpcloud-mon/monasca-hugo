@@ -7,8 +7,8 @@ categories = [ "overview" ]
 +++
 
 Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture. <!--more-->
-It uses a REST API for high-speed metrics processing and querying and has a streaming alarm engine and notification engine. All of these are linked
-using the [Kafka](https://kafka.apache.org/).
+It uses a REST API for high-speed metrics processing and querying and has a streaming alarm engine and notification engine. 
+All of the major components are linked using [Kafka](https://kafka.apache.org/).
 Every component in the system is built with High Availability (HA) in mind and can be scaled either horizontally or vertically to allow for monitoring of very large systems.
 ![Monasca Metrics Architecture](/img/architecture/metrics-architecture.png)
 
