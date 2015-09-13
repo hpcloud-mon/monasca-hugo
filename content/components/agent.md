@@ -7,14 +7,14 @@ categories = [ "Components" ]
 +++
 
 Monasca supports an optional monitoring [agent](https://github.com/stackforge/monasca-agent) that is written in Python. <!--more-->
-The agent is a python program that runs on systems and runs various checks then sends the data on to the [Monasca API](/components/api/).
-Checks the agent can run include:
+The Agent is a Python program that runs on systems and runs various checks then sends the data on to the [Monasca API](/components/api/).
+Checks the Agent can run include:
 
 - System metrics: cpu, memory, network, disk and file-system utilization.
-- Service metrics: The agent supports many plugins such as MySQL, RabbitMQ, Kafka, and many others.
-- Statsd: statsd metrics can be sent locally to the agent which will format and send on to the Monasca API.
-- Nagios: The Monasca Agent can run any Nagios check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as 'value_meta" in the metric.
-- Check_mk: Similar to Nagios checks the agent can run check_mk checks.
+- Service metrics: The agent supports plugins such as MySQL, RabbitMQ, Kafka, and many others.
+- Statsd: Statsd metrics can be sent locally to the agent which will format and send on to the Monasca API.
+- Nagios: The Agent can run any Nagios check and convert the results to a metric and send to the Monasca API. Status code and messages are sent as 'value_meta" in the metric.
+- Check_mk: Similar to Nagios checks the Agent can run check_mk checks.
 
 More details on the Agent can be found at these pages:
 
