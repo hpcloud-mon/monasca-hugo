@@ -6,26 +6,36 @@ title = "about"
 categories = [ "overview" ]
 +++
 
-Monasca provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution. <!--more-->
+Monasca is an OpenStack project that provides an open-source multi-tenant, highly scalable, performant, fault-tolerant monitoring-as-a-service solution. <!--more-->
 Metrics can be published to the Monasca API, stored and queried.
 Alarms can be created and notifications, such as email, can be sent when alarms transition state.
 Support for complex event processing and logging is in progress.
 Monasca builds an extensible platform for advanced monitoring services that can be used by both operators and tenants to gain operational insight and visibilty, ensuring availabilty and stability.
 
+##### presentations
+
+Several overviews of Monasca can be found at the following:
+
+- [Introducing Using Monasca for Production OpenStack Monitoring](https://www.openstack.org/summit/tokyo-2015/videos/presentation/congrats-you-stood-up-an-openstack-environment-but-now-they-want-you-to-monitor-it-introducing-using-monasca-for-production-openstack-monitoring)
+- [Monasca Deep Dive](https://www.openstack.org/summit/openstack-paris-summit-2014/session-videos/presentation/monasca-deep-dive-monitoring-at-scale)
+- [ELK and Monasca Crossing: Logging as an OpenStack Service](https://www.openstack.org/summit/tokyo-2015/videos/presentation/elk-and-monasca-crossing-logging-as-an-openstack-service)
+
+Additional information on Monasca, including presentations at prior OpenStack conferences, can be found at the [Monasca Wiki](https://wiki.openstack.org/wiki/Monasca).
+
 ##### who is involved?
 
 The members of the Monasca team are primarily composed of companies, organizations and individuals involved in development and deployment of OpenStack.
-Monasca is in the process of applying for [OpenStack](http://www.openstack.org/) governance.
-Currently, Monasca is hosted in Github under the Stackforge organization, and will move to the OpenStack organization when approved.
 
 Some of the major companies involved with developing and/or deploying Monasca include the following:
 
-- Hewlett-Packard
+- Hewlett Packard Enterprise
 - Time Warner Cable (TWC)
 - Fujitsu
 - Cisco
 - Cray
 - Rackspace
+- SAP
+- NEC
 
 ##### technologies
 
@@ -33,8 +43,7 @@ Monasca is written in both Java and Python. Several of the components in Monasca
 
 Monasca is built on several open-source technologies including: <!--more-->
 
-- [OpenStack](http://openstack.org): Monasca uses the [Keystone](http://docs.openstack.org/developer/keystone/) OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca is also in the process of integrating with several other OpenStack services such as [Heat](http://docs.openstack.org/developer/heat/) for auto-scaling and [Ceilometer](http://docs.openstack.org/developer/ceilometer/) for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.
-- [StackTach.v3](http://stacktach.com/): A real-time event stream processing system. StackTach.v3 is used in the Monasca Event processing system that is under development.
+- [OpenStack](http://openstack.org): Monasca uses the [Keystone](http://docs.openstack.org/developer/keystone/) OpenStack Identity Service for authentication, authorization and multi-tenancy. Monasca integrates with several other OpenStack services such as [Heat](http://docs.openstack.org/developer/heat/) for auto-scaling and [Ceilometer](http://docs.openstack.org/developer/ceilometer/) for monitoring OpenStack resources. Integrations with additional OpenStack services will be targeted in the future.
 - [Apache Kafka](http://kafka.apache.org/): A high-throughput distributed messaging system. Kafka is a central component in Monasca and provides the infranstructure for all internal communications between components.
 - [Apache Storm](https://storm.apache.org/): A free and open source distributed realtime computation system. Apache Storm is used in the Monasca Threshold Engine.
 - [Apache ZooKeeper](https://zookeeper.apache.org/): Used by Kafka and Storm.

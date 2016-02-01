@@ -6,7 +6,7 @@ title = "agent"
 categories = [ "Components" ]
 +++
 
-Monasca supports an optional monitoring [agent](https://github.com/stackforge/monasca-agent) that is written in Python. <!--more-->
+Monasca supports an optional monitoring [agent](https://github.com/openstack/monasca-agent) that is written in Python. <!--more-->
 The Agent is a Python program that runs on systems and runs various checks then sends the data on to the [Monasca API](/components/api/).
 Checks the Agent can run include:
 
@@ -18,7 +18,7 @@ Checks the Agent can run include:
 
 More details on the Agent can be found at these pages:
 
-- [Architecture and Installation](https://github.com/stackforge/monasca-agent/blob/master/docs/Agent.md)
-- [Agent Plugins](https://github.com/stackforge/monasca-agent/blob/master/docs/Plugins.md)
-- [Customizing the Agent](https://github.com/stackforge/monasca-agent/blob/master/docs/Customizations.md)
-- [Metrics and the Agent](https://github.com/stackforge/monasca-agent/blob/master/docs/MonascaMetrics.md)
+- [Architecture and Installation](https://github.com/openstack/monasca-agent/blob/master/docs/Agent.md)
+- [Agent Plugins](https://github.com/openstack/monasca-agent/blob/master/docs/Plugins.md)
+- [Customizing the Agent](https://github.com/openstack/monasca-agent/blob/master/docs/Customizations.md)
+- [Metrics and the Agent](https://github.com/openstack/monasca-agent/blob/master/docs/MonascaMetrics.md)

@@ -13,7 +13,7 @@ Monasca is designed to monitor a modern cloud infrastructure which is dynamic an
   are highly performant. Most notably our use of [Kafka](https://kafka.apache.org/), the [Monasca persister](/components/persister/) and our use of
   a dedicated [metrics DB](/components/metrics_db/).
 - Our system can dynamically handle infrastructure changes. There is no need to pre-register metrics before submitting,
-[alarm definitions](https://github.com/stackforge/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms) provide dynamic alarm
+[alarm definitions](https://github.com/openstack/monasca-api/blob/master/docs/monasca-api-spec.md#alarm-definitions-and-alarms) provide dynamic alarm
 creation based on the metrics being received and dimensions in our [metrics](/components/metrics) provide a rich way to identify components and infrastructure.
 - Monasca is Multi-tenant and authenticated. Metrics are submitted and authenticated using [Keystone](http://docs.openstack.org/developer/keystone/)
   and stored associated with a tenant ID. This enables not only Operator monitoring but also Monitoring as a Service use cases.
@@ -24,4 +24,4 @@ creation based on the metrics being received and dimensions in our [metrics](/co
   with other systems.
 - [Thresholding on alarming](/components/alarms/) on metrics is done real-time with compound alarms described using a simple expressive grammar
   composed of alarm sub-expressions and logical operators.
-- The overall architecture is a micro-services based bus architecture that allows for [easy extensibility](/root/coming-soon).
+- The overall architecture is a [microservices](http://martinfowler.com/articles/microservices.html) [message bus](http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html) architecture that allows for [easy extensibility](/root/coming-soon).

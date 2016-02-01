@@ -6,7 +6,7 @@ weight = 10
 
 +++
 
-The [Monasca persister](https://github.com/stackforge/monasca-persister) is responsible for reading metrics and alarm state transitions from
+The [Monasca persister](https://github.com/openstack/monasca-persister) is responsible for reading metrics and alarm state transitions from
 [Kafka](https://kafka.apache.org/) and writing to the [metrics DB](/components/metrics_db/).<!--more--> Though this is a relatively simple task it must
 be done reliably at high speed with HA.
 

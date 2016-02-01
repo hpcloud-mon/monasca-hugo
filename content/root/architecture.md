@@ -6,17 +6,18 @@ title = "architecture"
 categories = [ "overview" ]
 +++
 
-Monasca is a highly performant, scalable, fault-tolerant and extensible micro-services messages bus based architecture. <!--more-->
+Monasca is a highly performant, scalable, fault-tolerant and extensible [microservices](http://martinfowler.com/articles/microservices.html) [messages bus](http://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageBus.html) based architecture. <!--more-->
 It uses a REST API for high-speed metrics processing and querying and has a streaming alarm engine and notification engine. 
-All of the major components are linked using [Kafka](https://kafka.apache.org/).
+All of the major components communicate using [Kafka](https://kafka.apache.org/).
 Every component in the system is built with High Availability (HA) in mind and can be scaled either horizontally or vertically to allow for monitoring of very large systems.
 ![Monasca Metrics Architecture](/img/architecture/metrics-architecture.png)
 
 #### metrics
 The [Monasca API](/components/api/) is the gateway for all interaction with Monasca. In a typical scenario [metrics](/components/metrics)
-are collected by the [Monasca Agent](/components/agent/) running on a system and sent to the Monasca API. The API then published the metrics to the Kafka queue.
-From here the [Monasca Persister](/components/persister/) consumes metrics and writes them to our [Metrics database](/components/metrics_db/). The
-[Monasca Threshold Engine](/components/alarms/) also consumes the metrics and uses them to evaluate [alarms](/components/alarms/).
+are collected by the [Monasca Agent](/components/agent/) running on a system and sent to the Monasca API.
+The API then publishes the metrics to the Kafka queue.
+From here the [Monasca Persister](/components/persister/) consumes metrics and writes them to our [Metrics database](/components/metrics_db/).
+The [Monasca Threshold Engine](/components/alarms/) also consumes the metrics and uses them to evaluate [alarms](/components/alarms/).
 
 At this point the metrics are in our system and can be be queried using the Monasca API, either directly or through one of our other components, such as the Horizon plugin or the [Monasca CLI](/components/cli).
 

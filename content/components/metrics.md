@@ -46,4 +46,4 @@ A metric is a simple, concise, multi-dimensional and flexible description that c
     }
 ```
 
-The [Agent](/components/agent/) documentation has more information on [metrics.](https://github.com/stackforge/monasca-agent/blob/master/docs/MonascaMetrics.md)
+The [Agent](/components/agent/) documentation has more information on [metrics.](https://github.com/openstack/monasca-agent/blob/master/docs/MonascaMetrics.md)

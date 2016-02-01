@@ -5,21 +5,24 @@ date = "2015-08-18T17:04:58-06:00"
 title = "dev"
 
 +++
-Monasca is an active project seeking to be a part of the OpenStack community and welcomes new development.<!--more-->
+Monasca is an active [OpenStack](https://www.openstack.org/) project and welcomes new developers.<!--more-->
 
 #### OpenStack Community
 
-We have [submitted](https://review.openstack.org/#/c/213183/) to be included into OpenStack and follow OpenStack
-[contribution guidelines](https://wiki.openstack.org/wiki/How_To_Contribute) and [code standards](http://docs.openstack.org/developer/hacking/).
+Monasca was formally accepted as an official OpenStack project in November, 2015 during the [OpenStack Governance Review for Monasca](https://review.openstack.org/#/c/213183/) and follows the OpenStack [contribution guidelines](https://wiki.openstack.org/wiki/How_To_Contribute) and [code standards](http://docs.openstack.org/developer/hacking/).
 
-Our project has a [launchpad site](https://launchpad.net/monasca) which is used for bug tracking. The project mailing list is also hosted on launchpad,
-see the [team page](https://launchpad.net/~monasca) for details on that.
+The Monasca project has a [launchpad site](https://launchpad.net/monasca) which is primarily used for bug tracking and blueprints.
+The project mailing list is also hosted on launchpad, at the [Monasca Launchpad Team](https://launchpad.net/~monasca).
 
-Details on the team meetings are found on this [OpenStack wiki page](https://wiki.openstack.org/wiki/Meetings/Monasca).
+Monasca hosts weekly meetings in IRC as well as other venues, such as mid-cycle meetups and OpenStack Summits.
+Details on the team meetings can be found at [Monasca Weekly Meeting](http://eavesdrop.openstack.org/#Monasca_Team_Meeting) and the [Monasca Wiki](https://wiki.openstack.org/wiki/Meetings/Monasca).
 
 #### Code Contributions
 
-While we await our full inclusion into OpenStack our code is hosted as part of stackforge and can be found [here](https://github.com/stackforge?query=monasca)
+Monasca is hosted in Github by the [Github OpenStack Organization](https://github.com/openstack?query=monasca).
 
-The [Monasca Vagrant](/dev/vagrant/) environment is the primary setup used for development of Monasca. More information on testing Monasca can be found
-at our [testing page](/dev/testing/)
+All code is submitted via the [OpenStack Gerrit Review System](https://review.openstack.org/#/q/status:open+monasca,n,z) and is under gated tests that include a battery of unit and functional tests using the [Monasca DevStack Plugin](https://github.com/openstack/monasca-api/tree/master/devstack) and [Monasca Tempest Tests](https://github.com/openstack/monasca-api/tree/master/monasca_tempest_tests) .
+
+Currently, the [Monasca Vagrant](/dev/vagrant/) environment is the primary development environment for Monasca.
+The [Monasca DevStack Plugin](https://github.com/openstack/monasca-api/tree/master/devstack) environment is also used as a development environment.
+More information on testing Monasca can be found at the [testing page](/dev/testing/).

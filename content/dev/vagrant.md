@@ -7,7 +7,7 @@ weight = 10
 +++
 The Monasca team has built a [Vagrant](https://www.vagrantup.com/) based development environment which is especially helpful for any development
 on the server stack of Monasca.<!--more--> This environment and extensive instructions on running it are found at the github repo
-[monasca-vagrant](https://github.com/stackforge/monasca-vagrant).
+[monasca-vagrant](https://github.com/openstack/monasca-vagrant).
 
 The environment installs the latest Monasca code and all dependencies into two VMs. You can then turn off components as needed for development. There are some
 limitations to this environment, most notably it is a non-HA environment and initial downloads can take awhile.
